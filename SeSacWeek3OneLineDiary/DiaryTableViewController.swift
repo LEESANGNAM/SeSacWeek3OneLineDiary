@@ -110,12 +110,16 @@ class DiaryTableViewController: UITableViewController {
     
     
    
-//    // 커스텀
-//    override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-//
-//        UISwipeActionsConfiguration(actions: <#T##[UIContextualAction]#>)
-//        UIContextualAction(style: <#T##UIContextualAction.Style#>, title: <#T##String?#>, handler: <#T##UIContextualAction.Handler##UIContextualAction.Handler##(UIContextualAction, UIView, @escaping (Bool) -> Void) -> Void#>)
-//    }
+    // 커스텀
+    override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+
+        
+        let test = UIContextualAction(style: .normal, title: "테스트") { _,_,_ in
+            print("test")
+        }
+        
+       return UISwipeActionsConfiguration(actions: [test])
+    }
     
    
 
