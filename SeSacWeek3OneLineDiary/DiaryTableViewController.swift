@@ -9,7 +9,7 @@ import UIKit
 
 class DiaryTableViewController: UITableViewController {
 
-    var list = ["테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1","테스트2","테스트3테스트3테스트3테스트3테스트3테스트3테스트3테스트3테스트3테스트3테스트3테스트3테스트3테스트3테스트3테스트3","테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트4"]
+    var list = ["테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1","고래밥2","테스트3테스트3테스트3테스트3테스트3테스트3테스트3테스트3테스트3테스트3테스트3테스트3테스트3테스트3테스트3테스트3","테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트4"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +27,16 @@ class DiaryTableViewController: UITableViewController {
 
     }
     
+    @IBAction func searchBarButtonItemTapped(_ sender: UIBarButtonItem) {
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        
+        guard let vc = sb.instantiateViewController(withIdentifier: "SearchCollectionViewController") as?    SearchCollectionViewController else {  return }
+        
+        
+        navigationController?.pushViewController(vc, animated: true)
+        
+    }
     
     @IBAction func addBarButtonItemTapped(_ sender: UIBarButtonItem) {
         
@@ -84,14 +94,18 @@ class DiaryTableViewController: UITableViewController {
         //2. 스토리보드 파일 내 뷰 컨트롤러 찾기
         guard let vc = sb.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else {  return }
         //3. 화면 전환 방식 설정
+        // 값 넘기기 2. vc가 가지고 있는 프로퍼티에 데이터 추가
+        vc.labelString = list[indexPath.row]
         vc.modalTransitionStyle = .crossDissolve
         //4. 화면 띄우기
 //        present(vc, animated: true) // modal
         // 네비게이션 컨트롤러 푸쉬
         // 인터페이스 빌더에 네비게이션 컨트롤러가 임베드 되어 있어야만 push 가 동작합니다.!
+        
         navigationController?.pushViewController(vc, animated: true)
         
     }
+    
     
     
     

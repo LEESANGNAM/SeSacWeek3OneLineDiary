@@ -49,7 +49,7 @@
                 <outlet property="backView" destination="sIB-VQ-sMs" id="h35-08-zMk"/>
                 <outlet property="contentLabel" destination="e7x-wb-6no" id="JgA-jF-g6f"/>
             </connections>
-            <point key="canvasLocation" x="63" y="-18"/>
+            <point key="canvasLocation" x="62.595419847328245" y="-18.30985915492958"/>
         </tableViewCell>
     </objects>
     <resources>

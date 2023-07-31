@@ -8,11 +8,13 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
+    
+    @IBOutlet weak var testLabel: UILabel!
+    var labelString: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        testLabel.text = labelString
         setBackgroundColor()
         // Do any additional setup after loading the view.
     }

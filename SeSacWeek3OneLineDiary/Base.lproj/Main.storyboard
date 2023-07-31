@@ -65,6 +65,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="VT7-Ha-rZp">
+                        <barButtonItem key="leftBarButtonItem" image="magnifyingglass" catalog="system" id="0qm-hR-Ml6">
+                            <connections>
+                                <action selector="searchBarButtonItemTapped:" destination="3XP-Lu-b3I" id="lbR-Xx-52I"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="n8n-En-lDz">
                             <color key="tintColor" systemColor="systemCyanColor"/>
                             <connections>
@@ -85,7 +90,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lUJ-6b-yK2">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lUJ-6b-yK2">
                             <size key="itemSize" width="128" height="128"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -138,7 +143,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WoF-3t-2gw">
-                                <rect key="frame" x="0.0" y="769" width="393" height="49"/>
+                                <rect key="frame" x="0.0" y="774" width="393" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="e77-s8-4fw"/>
+                                </constraints>
                                 <items>
                                     <barButtonItem title="삭제" id="LGY-W7-yl8">
                                         <connections>
@@ -149,15 +157,28 @@
                                     <barButtonItem title="Item" id="5CZ-O3-z35"/>
                                 </items>
                             </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTH-EF-igI">
+                                <rect key="frame" x="30" y="89" width="333" height="655"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="unc-52-WUw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="WoF-3t-2gw" firstAttribute="bottom" secondItem="unc-52-WUw" secondAttribute="bottom" id="2wj-As-ckB"/>
+                            <constraint firstItem="unc-52-WUw" firstAttribute="trailing" secondItem="uTH-EF-igI" secondAttribute="trailing" constant="30" id="L95-kp-BXx"/>
+                            <constraint firstItem="uTH-EF-igI" firstAttribute="leading" secondItem="unc-52-WUw" secondAttribute="leading" constant="30" id="MRF-FA-9nr"/>
                             <constraint firstItem="WoF-3t-2gw" firstAttribute="trailing" secondItem="unc-52-WUw" secondAttribute="trailing" id="X2S-aX-eFw"/>
+                            <constraint firstItem="WoF-3t-2gw" firstAttribute="top" secondItem="uTH-EF-igI" secondAttribute="bottom" constant="30" id="dwF-UC-dyX"/>
+                            <constraint firstItem="uTH-EF-igI" firstAttribute="top" secondItem="unc-52-WUw" secondAttribute="top" constant="30" id="en4-FS-JqL"/>
                             <constraint firstItem="WoF-3t-2gw" firstAttribute="leading" secondItem="unc-52-WUw" secondAttribute="leading" id="kZ5-5R-OuM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="testLabel" destination="uTH-EF-igI" id="dx7-an-FvR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O05-Hn-bFa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -165,6 +186,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

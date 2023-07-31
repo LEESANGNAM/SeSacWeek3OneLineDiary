@@ -9,6 +9,7 @@ import UIKit
 
 class SearchCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet var contentsLabel: UILabel!
  
 
 }
