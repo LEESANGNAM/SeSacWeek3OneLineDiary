@@ -114,11 +114,28 @@ class DiaryTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
 
         
-        let test = UIContextualAction(style: .normal, title: "테스트") { _,_,_ in
-            print("test")
+        let pin = UIContextualAction(style: .normal, title: "") { _,_,_ in
+            print("pin")
+            //UIContextualAction  사용법 더 알아보기
+            //init(style: UIContextualAction.Style, title: String?, handler: @escaping UIContextualAction.Handler)
+            //typealias Handler = (UIContextualAction, UIView, @escaping (Bool) -> Void) -> Void
         }
+        pin.image = UIImage(systemName: "pin.fill")
+        pin.backgroundColor = .systemGray2
         
-       return UISwipeActionsConfiguration(actions: [test])
+        let bell = UIContextualAction(style: .normal, title: "") { _,_,_ in
+            print("bell")
+        }
+        bell.image = UIImage(systemName: "bell.fill")
+        bell.backgroundColor = .systemGray3
+        
+        let star = UIContextualAction(style: .normal, title: "") { _,_,_ in
+            print("star")
+        }
+        star.image = UIImage(systemName: "star.fill")
+        star.backgroundColor = .systemGray4
+        
+        return UISwipeActionsConfiguration(actions: [star,bell,pin])
     }
     
    
