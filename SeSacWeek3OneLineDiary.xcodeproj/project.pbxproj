@@ -9,21 +9,37 @@
 /* Begin PBXBuildFile section */
 		D698B59A2A773A6300ED3D28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D698B5992A773A6300ED3D28 /* AppDelegate.swift */; };
 		D698B59C2A773A6300ED3D28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D698B59B2A773A6300ED3D28 /* SceneDelegate.swift */; };
-		D698B59E2A773A6300ED3D28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D698B59D2A773A6300ED3D28 /* ViewController.swift */; };
+		D698B59E2A773A6300ED3D28 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D698B59D2A773A6300ED3D28 /* AddViewController.swift */; };
 		D698B5A12A773A6300ED3D28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D698B59F2A773A6300ED3D28 /* Main.storyboard */; };
 		D698B5A32A773A6500ED3D28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D698B5A22A773A6500ED3D28 /* Assets.xcassets */; };
 		D698B5A62A773A6500ED3D28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D698B5A42A773A6500ED3D28 /* LaunchScreen.storyboard */; };
+		D698B5AE2A773AD000ED3D28 /* DiaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D698B5AD2A773AD000ED3D28 /* DiaryTableViewController.swift */; };
+		D698B5B12A773BBD00ED3D28 /* DiaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D698B5AF2A773BBD00ED3D28 /* DiaryTableViewCell.swift */; };
+		D698B5B22A773BBD00ED3D28 /* DiaryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D698B5B02A773BBD00ED3D28 /* DiaryTableViewCell.xib */; };
+		D698B5B42A7752AE00ED3D28 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D698B5B32A7752AE00ED3D28 /* DetailViewController.swift */; };
+		D698B5B62A77625900ED3D28 /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D698B5B52A77625900ED3D28 /* Extension+UIViewController.swift */; };
+		D698B5B82A77796A00ED3D28 /* SearchCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D698B5B72A77796A00ED3D28 /* SearchCollectionViewController.swift */; };
+		D698B5BD2A777ADD00ED3D28 /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D698B5BB2A777ADD00ED3D28 /* SearchCollectionViewCell.swift */; };
+		D698B5BE2A777ADD00ED3D28 /* SearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D698B5BC2A777ADD00ED3D28 /* SearchCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D698B5962A773A6300ED3D28 /* SeSacWeek3OneLineDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSacWeek3OneLineDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D698B5992A773A6300ED3D28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D698B59B2A773A6300ED3D28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D698B59D2A773A6300ED3D28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D698B59D2A773A6300ED3D28 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		D698B5A02A773A6300ED3D28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D698B5A22A773A6500ED3D28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D698B5A52A773A6500ED3D28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D698B5A72A773A6500ED3D28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D698B5AD2A773AD000ED3D28 /* DiaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryTableViewController.swift; sourceTree = "<group>"; };
+		D698B5AF2A773BBD00ED3D28 /* DiaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryTableViewCell.swift; sourceTree = "<group>"; };
+		D698B5B02A773BBD00ED3D28 /* DiaryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiaryTableViewCell.xib; sourceTree = "<group>"; };
+		D698B5B32A7752AE00ED3D28 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D698B5B52A77625900ED3D28 /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
+		D698B5B72A77796A00ED3D28 /* SearchCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewController.swift; sourceTree = "<group>"; };
+		D698B5BB2A777ADD00ED3D28 /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		D698B5BC2A777ADD00ED3D28 /* SearchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,31 @@
 		D698B5982A773A6300ED3D28 /* SeSacWeek3OneLineDiary */ = {
 			isa = PBXGroup;
 			children = (
+				D698B5BF2A777AEF00ED3D28 /* SearchCollection */,
 				D698B5992A773A6300ED3D28 /* AppDelegate.swift */,
 				D698B59B2A773A6300ED3D28 /* SceneDelegate.swift */,
-				D698B59D2A773A6300ED3D28 /* ViewController.swift */,
+				D698B59D2A773A6300ED3D28 /* AddViewController.swift */,
 				D698B59F2A773A6300ED3D28 /* Main.storyboard */,
+				D698B5B32A7752AE00ED3D28 /* DetailViewController.swift */,
+				D698B5B52A77625900ED3D28 /* Extension+UIViewController.swift */,
+				D698B5AF2A773BBD00ED3D28 /* DiaryTableViewCell.swift */,
+				D698B5B02A773BBD00ED3D28 /* DiaryTableViewCell.xib */,
+				D698B5AD2A773AD000ED3D28 /* DiaryTableViewController.swift */,
 				D698B5A22A773A6500ED3D28 /* Assets.xcassets */,
 				D698B5A42A773A6500ED3D28 /* LaunchScreen.storyboard */,
 				D698B5A72A773A6500ED3D28 /* Info.plist */,
 			);
 			path = SeSacWeek3OneLineDiary;
+			sourceTree = "<group>";
+		};
+		D698B5BF2A777AEF00ED3D28 /* SearchCollection */ = {
+			isa = PBXGroup;
+			children = (
+				D698B5BB2A777ADD00ED3D28 /* SearchCollectionViewCell.swift */,
+				D698B5B72A77796A00ED3D28 /* SearchCollectionViewController.swift */,
+				D698B5BC2A777ADD00ED3D28 /* SearchCollectionViewCell.xib */,
+			);
+			path = SearchCollection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +159,9 @@
 			files = (
 				D698B5A62A773A6500ED3D28 /* LaunchScreen.storyboard in Resources */,
 				D698B5A32A773A6500ED3D28 /* Assets.xcassets in Resources */,
+				D698B5BE2A777ADD00ED3D28 /* SearchCollectionViewCell.xib in Resources */,
 				D698B5A12A773A6300ED3D28 /* Main.storyboard in Resources */,
+				D698B5B22A773BBD00ED3D28 /* DiaryTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +172,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D698B59E2A773A6300ED3D28 /* ViewController.swift in Sources */,
+				D698B5B82A77796A00ED3D28 /* SearchCollectionViewController.swift in Sources */,
+				D698B59E2A773A6300ED3D28 /* AddViewController.swift in Sources */,
+				D698B5B62A77625900ED3D28 /* Extension+UIViewController.swift in Sources */,
+				D698B5B12A773BBD00ED3D28 /* DiaryTableViewCell.swift in Sources */,
+				D698B5AE2A773AD000ED3D28 /* DiaryTableViewController.swift in Sources */,
+				D698B5B42A7752AE00ED3D28 /* DetailViewController.swift in Sources */,
 				D698B59A2A773A6300ED3D28 /* AppDelegate.swift in Sources */,
 				D698B59C2A773A6300ED3D28 /* SceneDelegate.swift in Sources */,
+				D698B5BD2A777ADD00ED3D28 /* SearchCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
