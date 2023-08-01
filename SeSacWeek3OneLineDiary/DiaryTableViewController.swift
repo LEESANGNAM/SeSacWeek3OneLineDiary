@@ -14,8 +14,8 @@ class DiaryTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // xib 로 테이블뷰 셀을 생성할 경우, 테이블뷰에 사용할 셀을 등록해주는 과정이 필요!
-        let nib = UINib(nibName: "DiaryTableViewCell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: "DiaryTableViewCell")
+        let nib = UINib(nibName: DiaryTableViewCell.identifier, bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: DiaryTableViewCell.identifier)
         
         
         tableView.backgroundColor = .clear
@@ -29,9 +29,9 @@ class DiaryTableViewController: UITableViewController {
     
     @IBAction func searchBarButtonItemTapped(_ sender: UIBarButtonItem) {
         
-        let sb = UIStoryboard(name: "Main", bundle: nil)
+//        let sb = UIStoryboard(name: "Main", bundle: nil)
         
-        guard let vc = sb.instantiateViewController(withIdentifier: "SearchCollectionViewController") as?    SearchCollectionViewController else {  return }
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "SearchCollectionViewController") as?    SearchCollectionViewController else {  return }
         
         
         navigationController?.pushViewController(vc, animated: true)
@@ -64,7 +64,7 @@ class DiaryTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "DiaryTableViewCell") as? DiaryTableViewCell else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: DiaryTableViewCell.identifier) as? DiaryTableViewCell else { return UITableViewCell() }
         
         cell.contentLabel.text = list[indexPath.row]
         cell.contentLabel.numberOfLines = 0

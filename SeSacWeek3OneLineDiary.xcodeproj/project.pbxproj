@@ -21,6 +21,7 @@
 		D698B5B82A77796A00ED3D28 /* SearchCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D698B5B72A77796A00ED3D28 /* SearchCollectionViewController.swift */; };
 		D698B5BD2A777ADD00ED3D28 /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D698B5BB2A777ADD00ED3D28 /* SearchCollectionViewCell.swift */; };
 		D698B5BE2A777ADD00ED3D28 /* SearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D698B5BC2A777ADD00ED3D28 /* SearchCollectionViewCell.xib */; };
+		D698B5F12A789B5A00ED3D28 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D698B5F02A789B5A00ED3D28 /* SettingTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		D698B5B72A77796A00ED3D28 /* SearchCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewController.swift; sourceTree = "<group>"; };
 		D698B5BB2A777ADD00ED3D28 /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
 		D698B5BC2A777ADD00ED3D28 /* SearchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCollectionViewCell.xib; sourceTree = "<group>"; };
+		D698B5F02A789B5A00ED3D28 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				D698B59B2A773A6300ED3D28 /* SceneDelegate.swift */,
 				D698B59D2A773A6300ED3D28 /* AddViewController.swift */,
 				D698B59F2A773A6300ED3D28 /* Main.storyboard */,
+				D698B5F02A789B5A00ED3D28 /* SettingTableViewController.swift */,
 				D698B5B32A7752AE00ED3D28 /* DetailViewController.swift */,
 				D698B5B52A77625900ED3D28 /* Extension+UIViewController.swift */,
 				D698B5AF2A773BBD00ED3D28 /* DiaryTableViewCell.swift */,
@@ -176,6 +179,7 @@
 				D698B59E2A773A6300ED3D28 /* AddViewController.swift in Sources */,
 				D698B5B62A77625900ED3D28 /* Extension+UIViewController.swift in Sources */,
 				D698B5B12A773BBD00ED3D28 /* DiaryTableViewCell.swift in Sources */,
+				D698B5F12A789B5A00ED3D28 /* SettingTableViewController.swift in Sources */,
 				D698B5AE2A773AD000ED3D28 /* DiaryTableViewController.swift in Sources */,
 				D698B5B42A7752AE00ED3D28 /* DetailViewController.swift in Sources */,
 				D698B59A2A773A6300ED3D28 /* AppDelegate.swift in Sources */,
