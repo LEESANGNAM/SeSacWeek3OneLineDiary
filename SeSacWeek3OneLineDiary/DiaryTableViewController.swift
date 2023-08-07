@@ -43,7 +43,8 @@ class DiaryTableViewController: UITableViewController {
         //1. 스토리보드 파일찾기
         let sb = UIStoryboard(name: "Main", bundle: nil)
         //2. 스토리보드 파일 내 뷰 컨트롤러 찾기
-        guard let vc = sb.instantiateViewController(withIdentifier: "AddViewController") as?    AddViewController else {  return }
+        guard let vc = sb.instantiateViewController(withIdentifier: "AddViewController") as?   AddViewController else {  return }
+        vc.type = .add
         //2-1( 옵션) . 네비게이션 컨트롤러가 있는 형태( 제목바) 로 present 하고 싶은 경우
         //nav를 사용한다면, present와 화면 전환 방식도 nav로 수정 해주어야 함!!!
         let nav = UINavigationController(rootViewController: vc)
@@ -92,10 +93,12 @@ class DiaryTableViewController: UITableViewController {
         //1. 스토리보드 파일찾기
         let sb = UIStoryboard(name: "Main", bundle: nil)
         //2. 스토리보드 파일 내 뷰 컨트롤러 찾기
-        guard let vc = sb.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else {  return }
+        guard let vc = sb.instantiateViewController(withIdentifier: "AddViewController") as? AddViewController else {  return }
         //3. 화면 전환 방식 설정
         // 값 넘기기 2. vc가 가지고 있는 프로퍼티에 데이터 추가
-        vc.labelString = list[indexPath.row]
+//        vc.labelString = list[indexPath.row]
+        vc.type = .edit
+        vc.text = list[indexPath.row]
         vc.modalTransitionStyle = .crossDissolve
         //4. 화면 띄우기
 //        present(vc, animated: true) // modal
